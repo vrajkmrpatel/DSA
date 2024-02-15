@@ -33,3 +33,17 @@ int main()
 
     return 0;
 }
+
+
+
+// vector version 
+// vector<int> printNos(int x) {
+//     vector<int> v;
+//     if (x == 1) {
+//       return {1};
+//     }
+
+//     v = printNos(x - 1);
+//     v.push_back(x);
+//     return v;
+// }
