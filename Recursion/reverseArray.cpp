@@ -33,6 +33,22 @@ void usingrecursion(int i, int a[], int n)
     usingrecursion(i + 1, a, n);
 }
 
+// vector<int> reverseArray(int n, vector<int> &nums)
+
+// {
+
+//     if (n == 0)
+//     {
+
+//         return {};
+//     }
+//     vector<int> v = reverseArray(n - 1, nums);
+
+//     v.push_back(nums[nums.size() - n]);
+
+//     return v;
+// }
+
 int main()
 {
 
