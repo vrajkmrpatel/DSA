@@ -1,6 +1,8 @@
 {
     "cmake.configureOnOpen": false,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "set": "cpp"
     }
 }
