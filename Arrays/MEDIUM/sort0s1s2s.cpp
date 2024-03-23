@@ -35,7 +35,9 @@ void sortArray(vector<int> &arr, int n)
     // for (int i = count_0 + count_1; i < n; i++)
     //     arr[i] = 2;
 
-    // OPTIMAL APPROACH
+    // OPTIMAL APPROACH - Dutch National Flag Algorithm
+    // Time - O(N)
+    // space - O(1)
     int low = 0;
     int mid = 0;
     int high = n - 1;
