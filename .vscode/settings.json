@@ -12,5 +12,6 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "vector": "cpp"
-    }
+    },
+    "dotnet.defaultSolution": "ConsoleApp1.sln"
 }

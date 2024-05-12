@@ -142,16 +142,17 @@ int main()
     cout << "second list is ";
     traverseLL(l2);
 
-    // Method - 1
-    // int num1 = convertLLtoINT(l1);
-    // int num2 = convertLLtoINT(l2);
-    // cout << num1 << " " << num2 << " ";
+    /* Method - 1
+    int num1 = convertLLtoINT(l1);
+    int num2 = convertLLtoINT(l2);
+    cout << num1 << " " << num2 << " ";
 
-    // int sum = num1 + num2;
-    // cout << sum << " ";
+    int sum = num1 + num2;
+    cout << sum << " ";
 
-    // Node *ans = convertINTtoLL(sum);
-    // traverseLL(ans);
+    Node *ans = convertINTtoLL(sum);
+    traverseLL(ans);
+     */
 
     // Method - 2
     // Node *ans = addTWOnumbers(l1, l2);
