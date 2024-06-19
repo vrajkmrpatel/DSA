@@ -45,7 +45,7 @@ int main()
     int n = arr.size();
     int low = 0;
     int high = n - 1;
-    int ans = BinarySearch(arr, low, high, 6);
+    int ans = BinarySearch(arr, low, high, 13);
 
     cout << ans << endl;
 
