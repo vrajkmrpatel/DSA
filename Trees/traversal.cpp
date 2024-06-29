@@ -83,6 +83,15 @@ vector<vector<int>> levelOrder(Node *root)
       }
       return ans;
 }
+void printVector(const vector<int> &arr)
+{
+
+      for (auto num : arr)
+      {
+            cout << num << " ";
+      }
+      // cout << endl;
+}
 int main()
 {
       Node *root = new Node(1);
@@ -111,13 +120,9 @@ int main()
       // LEVEL ORDER TRAVERSAL
       vector<vector<int>> ans = levelOrder(root);
 
-      for (int i = 0; i < ans.size(); i++)
+      for (const vector<int> &level : ans)
       {
-            for (int j = 0; j < ans[i].size(); j++)
-            {
-
-                  cout << ans[i][j] << " ";
-            }
+            printVector(level);
       }
 
       return 0;
