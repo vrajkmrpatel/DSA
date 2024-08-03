@@ -2,31 +2,36 @@
 
 using namespace std;
 
+void print(map<int, string> &m)
+{
+
+    cout << m.size() << endl;
+    for (auto &pr : m)
+    {
+        cout << pr.first << " " << pr.second << endl;
+    }
+}
+
 int main()
 {
     // Map
 
-    int arr[] = {2, 2, 1, 3, 2, 1, 3, 1, 1};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    map<int, string> m;
+    m[1] = "abc";
+    m[5] = "cdc";
+    m[3] = "acd";
+    m[5] = "cde";
 
-    map<int, int> mp;
+    print(m);
 
-    for (int i = 0; i < n; i++)
-    {
-        mp[arr[i]]++;
-    }
-
-    for (auto it : mp)
-    {
-        // cout << it.first << " ";
-        // cout << it.second << " ";
-        // cout << endl;
-
-        if (it.second > (n / 2))
-        {
-            cout << it.first;
-            // break;
-        }
-    }
+    auto it = m.find(3);
+    // if (it == m.end())
+    // {
+    //     cout << "No Value" << endl;
+    // }
+    // else
+    // {
+    //     cout << it->first << " " << it->second << endl;
+    // }
     return 0;
 }
