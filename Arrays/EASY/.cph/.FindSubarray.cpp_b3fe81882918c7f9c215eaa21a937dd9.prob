@@ -1,0 +1,1 @@
+{"name":"Local: FindSubarray","url":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\Arrays\\EASY\\FindSubarray.cpp","tests":[{"id":1722743274042,"input":"1 2 3 4 ","output":"1\n1 2\n1 2 3\n1 2 3 4\n2\n2 3\n2 3 4\n3 \n3 4\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\Arrays\\EASY\\FindSubarray.cpp","group":"local","local":true}
