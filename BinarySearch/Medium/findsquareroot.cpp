@@ -48,7 +48,7 @@ int findSquareRoot(int n)
 }
 int main()
 {
-      int num = 28;
+      int num = 1;
 
       int root = findSquareRoot(num);
       cout << "Square Root is: " << root << endl;
