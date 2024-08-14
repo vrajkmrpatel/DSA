@@ -2,25 +2,48 @@
 
 using namespace std;
 
+bool isLucky(int num)
+{
+      string str = to_string(num);
+
+      for (char digi : str)
+      {
+            if (digi != '4' && digi != '7')
+            {
+                  return false;
+            }
+      }
+      return true;
+}
+
+string findLuckyNumber(long long n)
+{
+      int luckyDigitCount = 0;
+      string nstr = to_string(n);
+
+      for (char digit : nstr)
+      {
+            if (digit == '4' || digit == '7')
+            {
+                  luckyDigitCount++;
+            }
+      }
+
+      if (isLucky(luckyDigitCount))
+      {
+            return "YES";
+      }
+      else
+      {
+            return "NO";
+      }
+}
+
 int main()
 {
-      long long int n;
+      long long n;
       cin >> n;
 
-      while (n > 0)
-      {
-            long long int rem = n % 10;
-            if (rem != 4 && rem != 7)
-            {
-                  cout << "NO" << endl;
-                  break;
-            }
-            n /= 10;
-      }
-      if (n == 0)
-      {
-            cout << "YES" << endl;
-      }
-
+      cout << findLuckyNumber(n) << endl;
       return 0;
 }
