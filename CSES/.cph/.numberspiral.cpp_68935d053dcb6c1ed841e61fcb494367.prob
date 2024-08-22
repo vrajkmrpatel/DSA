@@ -1,0 +1,1 @@
+{"name":"Local: numberspiral","url":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\CSES\\numberspiral.cpp","tests":[{"id":1724261556974,"input":"3\n2 3\n1 1\n4 2","output":"8\n1\n15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\CSES\\numberspiral.cpp","group":"local","local":true}
