@@ -15,8 +15,7 @@ int main()
             int a, b;
             cin >> a >> b;
 
-            tram = tram - a;
-            tram = tram + b;
+            tram = tram + (b - a);
 
             maxN = max(maxN, tram);
       }
