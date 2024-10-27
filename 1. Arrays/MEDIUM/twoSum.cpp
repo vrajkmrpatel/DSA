@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int getPairsCount(vector<int> &arr, int n, int k)
+bool getPairsCount(vector<int> &arr, int n, int target)
 {
     // code here
     // // BRUT FORCE SOLUTION
@@ -50,48 +50,48 @@ int getPairsCount(vector<int> &arr, int n, int k)
 
     // BETTER APPROACH USING HASHMAP
 
-    map<int, int> mp;
-    int count = 0;
+    // map<int, int> mp;
+    // int count = 0;
 
-    for (int i = 0; i < n; i++)
-    {
-        int num = arr[i];
-        int more = k - num;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int num = arr[i];
+    //     int more = k - num;
 
-        if (mp.find(more) != mp.end())
-        {
-            count++;
-        }
-        if (mp.find(num) == mp.end())
-        {
-            mp[num] = i;
-        }
-    }
-    return count;
+    //     if (mp.find(more) != mp.end())
+    //     {
+    //         count++;
+    //     }
+    //     if (mp.find(num) == mp.end())
+    //     {
+    //         mp[num] = i;
+    //     }
+    // }
+    // return count;
 
     // OPTIMAL TWO POINTER
     // TIME - O(N + N*LOGN)
     // SPACE - O(1)
 
-    // sort(arr.begin(), arr.end());
+    sort(arr.begin(), arr.end());
 
-    // int left = 0;
-    // int right = n - 1;
-    // while (left < right)
-    // {
+    int left = 0;
+    int right = n - 1;
+    while (left < right)
+    {
 
-    //     int sum = arr[left] + arr[right];
-    //     if (sum == target)
-    //     {
-    //         return "YES";
-    //     }
-    //     else if (sum < target)
-    //         left++;
-    //     else
-    //         right--;
-    // }
+        int sum = arr[left] + arr[right];
+        if (sum == target)
+        {
+            return true;
+        }
+        else if (sum < target)
+            left++;
+        else
+            right--;
+    }
 
-    // return "NO";
+    return false;
 }
 int main()
 {
