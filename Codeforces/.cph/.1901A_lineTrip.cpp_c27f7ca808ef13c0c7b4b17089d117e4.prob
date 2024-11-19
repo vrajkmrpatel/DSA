@@ -1,1 +1,0 @@
-{"name":"Local: 1901A_lineTrip","url":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\Codeforces\\1901A_lineTrip.cpp","tests":[{"id":1730138478612,"input":"3\n3 7\n1 2 5\n3 6\n1 2 5\n1 10\n7","output":"4\n3\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\PROGRAMMING\\DSA\\DSA STRIVER\\Codeforces\\1901A_lineTrip.cpp","group":"local","local":true}
