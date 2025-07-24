@@ -16,7 +16,14 @@
         "forward_list": "cpp",
         "string_view": "cpp",
         "initializer_list": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "numeric": "cpp"
     },
-    "dotnet.defaultSolution": "ConsoleApp1.sln"
+    "dotnet.defaultSolution": "ConsoleApp1.sln",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }

@@ -17,7 +17,6 @@ struct TreeNode
 
 void inorder(TreeNode *root)
 {
-
       if (root == NULL)
       {
             return;

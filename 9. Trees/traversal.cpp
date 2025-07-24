@@ -53,7 +53,6 @@ void postorder(Node *root)
 
 vector<vector<int>> levelOrder(Node *root)
 {
-
       vector<vector<int>> ans;
 
       if (root == NULL)
@@ -63,7 +62,6 @@ vector<vector<int>> levelOrder(Node *root)
       q.push(root);
       while (!q.empty())
       {
-
             int n = q.size();
             vector<int> level;
 
