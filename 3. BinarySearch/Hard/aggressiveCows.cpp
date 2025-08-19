@@ -7,7 +7,7 @@ bool canWePlace(vector<int> &stalls, int dist, int cows)
       int cntCows = 1;
       int last = stalls[0];
 
-      for (int i = 1; i < stalls.size() - 1; i++)
+      for (int i = 1; i < stalls.size(); i++)
       {
 
             if (stalls[i] - last >= dist)

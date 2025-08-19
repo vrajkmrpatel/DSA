@@ -487,7 +487,7 @@ int main()
     {
         int n;
         cin >> n;
-        pattern17(n);
+        pattern20(n);
     }
     return 0;
 }

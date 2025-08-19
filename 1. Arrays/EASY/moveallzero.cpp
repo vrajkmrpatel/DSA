@@ -39,7 +39,7 @@ void moveAllZeros(vector<int> &arr, int n)
 
     // OPTIMAL ONE
     // TC: O(N)
-    // EVERY TIME I WILL BE ON 0 ELEMENT 
+    // EVERY TIME I WILL BE ON 0 ELEMENT
     int i = 0;
     for (int j = 0; j < n; j++)
     {
@@ -53,7 +53,7 @@ void moveAllZeros(vector<int> &arr, int n)
 int main()
 {
 
-    vector<int> arr = {0, 0, 1, 0, 2, 3, 0, 0, 0, 0, 0, 4};
+    vector<int> arr = {1, 2, 0, 1, 0, 2, 3, 0, 0, 0, 0, 0, 4};
     int n = arr.size();
     // cout << n << " ";
 
