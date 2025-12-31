@@ -6,7 +6,7 @@ using namespace std;
 void printMemoTable(vector<int> &memo)
 {
       for (auto it : memo)
-      {
+      {`
             cout << it << " ";
       }
 }
